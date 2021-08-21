@@ -182,13 +182,11 @@ while (true) {
     // break;
 }
 // очищаем файл блокировки
-$fp = fopen($_SERVER['DOCUMENT_ROOT']."/upload/lockGetStatusPostVk.txt", "w");
+$fp = fopen($_SERVER['DOCUMENT_ROOT']."/upload/jhgfjhf.txt", "w");
 fclose($fp);
 echo 'Time work: '.round(microtime(true) - $start, 4).' s '.$numPost."\n";
 
-require '/home/bitrix/ext_www/optid.ru/local/scripts/parserSadovod/deleteProduct.php';
 
-require '/home/bitrix/ext_www/optid.ru/local/scripts/parserSadovod/statTodayDelete.php';
 
 ?>
 <!-- <meta http-equiv="refresh" content="1; URL=https://optid.ru/local/scripts/parserSadovod/getStatusPostVk.php?i=<?=++$_REQUEST['i']?>">  -->
